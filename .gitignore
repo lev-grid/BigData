@@ -1,5 +1,11 @@
 
 *.iml
 .idea/
+.gradle/
 files/
 out/
+build/
+generated-sources/
+__pycache__/
+gradle/
+simple_pb2*

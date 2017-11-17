@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "net.sytes.levizi.bd2017";
+option java_outer_classname = "SampleServiceProto";
+
+service SampleService {
+    rpc getFactorization(FactorRequest) returns (FactorResponse) {}
+}
+
+
+message FactorRequest {
+    int64 num = 1;
+}
+
+message FactorResponse {
+    string result = 1;
+}
